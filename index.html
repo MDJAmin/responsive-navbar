@@ -8,36 +8,48 @@
   </head>
   <body>
     <nav>
-        <ul class="sidebar">
-            <li><a href="#" onclick=hideSidebar()><img src="assets/close_FILL0_wght400_GRAD0_opsz48.svg" alt="Close-icon"></a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">A~Shop</a></li>
-            <li class="hideOnMobile"><a href="#">Blog</a></li>
-            <li class="hideOnMobile"><a href="#">Products</a></li>
-            <li class="hideOnMobile"><a href="#">About</a></li>
-            <li class="hideOnMobile"><a href="#">Forum</a></li>
-            <li class="hideOnMobile"><a href="#">Login</a></li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="assets/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="Menu-icon"></a></li>
-        </ul> 
+      <ul class="sidebar">
+        <li>
+          <a href="#" onclick="hideSidebar()"
+            ><img
+              src="assets/close_FILL0_wght400_GRAD0_opsz48.svg"
+              alt="Close-icon"
+          /></a>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">A~Shop</a></li>
+        <li class="hideOnMobile"><a href="#">Blog</a></li>
+        <li class="hideOnMobile"><a href="#">Products</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Forum</a></li>
+        <li class="hideOnMobile"><a href="#">Login</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="assets/menu_FILL0_wght400_GRAD0_opsz48.svg"
+              alt="Menu-icon"
+          /></a>
+        </li>
+      </ul>
     </nav>
     <main>
-        <img class="Hero-bg" src="assets/laptop.jpg" alt="Hero-img">
+      <img class="Hero-bg" src="assets/laptop.jpg" alt="Hero-img" />
     </main>
     <script>
-   function showSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'flex'
-    }
-    function hideSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none'
-    }
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
     </script>
-</body>
+  </body>
 </html>
