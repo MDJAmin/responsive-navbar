@@ -4,9 +4,10 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  overflow-y: hidden;
 }
 body {
-  min-height: 100vh;
+  min-height: 90vh;
   background: url("laptop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,8 +15,13 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
-  background-color: white;
+  background-color: #337c60;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 nav ul {
   width: 100%;
@@ -33,11 +39,11 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: black;
+  color: white;
 }
 
 nav a:hover {
-  background-color: #f0f0f0;
+  background-color: #5d8475ac;
 }
 nav li:first-child {
   margin-right: auto;
@@ -80,5 +86,38 @@ nav li:first-child {
   }
 }
 .Hero-bg {
+  height: 100vh;
   width: 100%;
+}
+
+.MDJAminDiv {
+  z-index: 4444;
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+  z-index: 100;
+}
+
+.MDJAmin {
+  text-decoration: none;
+  padding: 4px 0;
+  /* color: rgba(44, 44, 44, 0.525); */
+  color: rgba(204, 204, 204, 0.414);
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1.1em;
+  transition: all 0.5s;
+}
+
+.MDJAmin:hover {
+  /* color: #000000; */
+  color: #28bc83;
+}
+
+.menuBtn {
+  font-size: 2em;
+}
+
+.closeBtn {
+  font-size: 2em;
 }

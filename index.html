@@ -2,19 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
     <title>Responsive Navbar</title>
   </head>
   <body>
     <nav>
       <ul class="sidebar">
         <li>
-          <a href="#" onclick="hideSidebar()"
-            ><img
-              src="assets/close_FILL0_wght400_GRAD0_opsz48.svg"
-              alt="Close-icon"
-          /></a>
+          <a
+            class="closeBtn"
+            href="#"
+            onclick="hideSidebar()"
+            >×</a
+          >
         </li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Products</a></li>
@@ -23,24 +35,39 @@
         <li><a href="#">Login</a></li>
       </ul>
       <ul>
-        <li><a href="#">A~Shop</a></li>
+        <li><a href="https://github.com/MDJAmin">MDJAmin</a></li>
         <li class="hideOnMobile"><a href="#">Blog</a></li>
         <li class="hideOnMobile"><a href="#">Products</a></li>
         <li class="hideOnMobile"><a href="#">About</a></li>
         <li class="hideOnMobile"><a href="#">Forum</a></li>
         <li class="hideOnMobile"><a href="#">Login</a></li>
-        <li class="menu-button" onclick="showSidebar()">
-          <a href="#"
-            ><img
-              src="assets/menu_FILL0_wght400_GRAD0_opsz48.svg"
-              alt="Menu-icon"
-          /></a>
+        <li
+          class="menu-button"
+          onclick="showSidebar()"
+        >
+          <a
+            class="menuBtn"
+            href="#"
+            >=</a
+          >
         </li>
       </ul>
     </nav>
     <main>
-      <img class="Hero-bg" src="assets/laptop.jpg" alt="Hero-img" />
+      <img
+        class="Hero-bg"
+        src="https://images.unsplash.com/photo-1755134148217-2dd89cc6a2c2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Hero-img"
+      />
     </main>
+    <div class="MDJAminDiv">
+      <a
+        class="MDJAmin"
+        href="https://github.com/MDJAmin"
+        target="_blank"
+        >MDJAmin</a
+      >
+    </div>
     <script>
       function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
